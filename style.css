@@ -1,0 +1,174 @@
+body {
+	font-family: 'Exo 2', sans-serif;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8));
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	overflow: hidden;
+	height: 100vh;
+}
+
+header {
+	display: block;
+	text-align: center;
+}
+
+header h1 {
+	font-family: 'Stalinist One', cursive;
+	font-size: 4rem;
+	padding: 0 1rem;
+}
+
+.rules-result-container {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+#rules {
+	display: block;
+	text-align: center;
+	font-size: 2rem;
+}
+
+#playcontainer {
+	display: flex;
+	justify-content: center;
+}
+
+#playcontainer .icon {
+	padding: 2rem 3rem;
+	border-radius: 8%;
+	margin: 0 5%;
+}
+
+#playcontainer .icon:hover,
+#playcontainer .icon .active {
+	background-color: rgba(255, 255, 255, 0.815);
+	color: rgba(46, 53, 59, 0.863);
+	cursor: pointer;
+}
+
+#playcontainer .icon:hover {
+	cursor: pointer;
+}
+
+#playcontainer .icon:hover i {
+	color: rgba(46, 53, 59, 0.863);
+}
+
+#playcontainer i {
+	font-size: 5rem;
+	color: rgba(255, 255, 255, 0.815);
+}
+
+p {
+	font-size: 1.3rem;
+}
+
+#rock i {
+	transform: rotate(90deg);
+}
+
+#paper i {
+	transform: rotate(90deg);
+}
+
+#scissors i {
+	transform: rotate(180deg);
+	transform: scaleX(-1);
+}
+
+#result {
+	display: block;
+	text-align: center;
+	margin: auto;
+	font-size: 2rem;
+	font-weight: bold;
+	animation: slide-in 0.5s forwards;
+}
+
+#resultcounter {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+#resultcounter span {
+	width: 20vw;
+}
+
+.wincount {
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+#modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(45, 45, 45, 0.95);
+	text-align: center;
+}
+
+#game-end {
+	color: white;
+	margin: 15% auto 0;
+	padding: 1rem;
+	width: 80%;
+	display: block;
+	text-align: center;
+}
+
+.btn {
+	padding: 1rem;
+	margin: 0 2%;
+	border-radius: 10%;
+	background-color: lightgrey;
+	color: black;
+}
+
+@media screen and (max-width: 800px) {
+	header h1 {
+		font-size: 2rem;
+	}
+	#rules {
+		max-height: 20vh;
+	}
+	#rules p {
+		font-size: 1rem;
+	}
+	#playcontainer {
+		top: 50%;
+	}
+
+	#playcontainer i {
+		font-size: 3rem;
+	}
+	#playcontainer .icon {
+		padding: 2% 5%;
+	}
+	#result {
+		margin-top: 10%;
+		font-size: 1.5rem;
+	}
+	#resultcounter {
+		margin-top: 0;
+		top: 80%;
+	}
+	#resultcounter span {
+		font-size: 1rem;
+		margin: 5%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	header h1 {
+		font-size: 1.5rem;
+	}
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rock, Paper, Scissors</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Exo+2|Stalinist+One&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/5bef2bea5a.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<header id="header">
+			<h1>Rock, Paper, Scissors</h1>
+		</header>
+		<div id="modal">
+			<div id="game-end">
+				<p></p>
+			</div>
+			<button id="restart" class="btn">Oh yeah!</button>
+			<button id="close" class="btn">Naw.</button>
+		</div>
+		<div class="rules-result-container">
+			<div id="rules">
+				<p>
+					You will play a best-of-nine (first to 5) match of rock, paper,
+					scissors against the computer.
+				</p>
+				<p>
+					Remember, rock beats scissors, scissors beats paper, paper beats rock.
+				</p>
+				<p>Ties will not count in the game tally.</p>
+				<p>When you're ready, choose your weapon:</p>
+			</div>
+			<p class="turn-result"></p>
+		</div>
+		<div id="playcontainer">
+			<div class="icon" id="rock" data-key="rock">
+				<h2><i class="far fa-hand-rock"></i></h2>
+			</div>
+			<div class="icon" id="paper" data-key="paper">
+				<h2><i class="far fa-hand-paper"></i></h2>
+			</div>
+			<div class="icon" id="scissors" data-key="scissors">
+				<h2><i class="far fa-hand-scissors"></i></h2>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
